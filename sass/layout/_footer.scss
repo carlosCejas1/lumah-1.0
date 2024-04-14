@@ -1,0 +1,38 @@
+footer {
+    background-color: #134f61;
+    div {
+        h4 {
+            font-family: 'avigea';
+            color: white;
+            background-color: #134f61;
+            font-size: 4rem;
+            text-align: center;
+            text-transform: capitalize;
+            padding-top: 1rem;
+        }
+    }
+}
+
+.redesSociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    a {
+        i {
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+}
+
+.copyRight {
+    color: white;
+    background-color: #f1812c;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

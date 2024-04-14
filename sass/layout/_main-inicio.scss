@@ -1,0 +1,23 @@
+.portada {
+    background-image: url(../../img/fondo.jpg);
+    height: 67.5rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #134f61;
+    font-family: 'avigea';
+    font-size: 3.75rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: .3125rem;
+    width: 50%;
+    span {
+        color: #dd3737;
+    }
+    .naranja {
+        color: #f1812c;
+    }
+}
