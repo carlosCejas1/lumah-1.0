@@ -1,0 +1,257 @@
+@media (max-width: 320px) {
+    header {
+        flex-direction: row;
+        padding-right: 1rem;
+        article {
+            align-items: flex-start;
+        }
+        .abrirMenu {
+            display: block;
+            border: 0;
+            font-size: 2rem;
+            background-color: transparent;
+            color: white;
+        }
+        nav {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background-color: #134f61;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.466);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            .nav.visible {
+                opacity: 1;
+                visibility: visible;
+            }
+            .navBar {
+                flex-direction: column;
+                align-items: end;
+                padding: 1rem;
+            }
+            .cerrarMenu {
+                display: block;
+                border: 0;
+                font-size: 2rem;
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+    .portada {
+        background-image: url(../assets/img/caro-320p.jpg);
+        background-position: top;
+        background-size: contain;
+        width: 100vw;
+        height: 150vw;
+        h1 {
+            width: 50%;
+            font-size: 1.75rem;
+            margin-right: 0;
+            text-align: left;
+        }
+    }
+
+    /* Layout Main Desarrollo de Marca */
+    
+    .fondoDesarrollo1 {
+        height: 37.5rem;
+        h2 {
+            font-size: 2rem;
+            padding-top: 17.5rem;
+        }
+    }
+    .parrafoDesarrollo1 {
+        font-size: 1rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    h3 {
+        font-size: 1.75rem;
+        padding-left: 10%;
+        padding-right: 0%;
+        padding-bottom: 0rem;
+    }
+    .parrafoDesarrollo2 {
+        flex-direction: column;
+        p {
+            font-size: 1rem;
+        }
+        img {
+            width: 80%;
+        }
+    }
+    .fondoDesarrollo2 {
+        .area1 {
+            font-size: .75rem;
+            height: auto;
+            grid-template-areas: 
+            "area1 area1 area2 area2"
+            "area3 area3 area3 ."
+            ". area4 area4 area4"
+            "area5 area5 area5 ."
+            ;
+            p {
+                font-size: 1.75rem;
+                .negro {
+                    font-size: 1rem;
+                }
+            }
+            .area2 {
+                margin-top: .5rem;
+                margin-left: 0;
+                margin-right: .5rem;
+            }
+            .area3 {
+                margin: 0;
+                margin-left: .5rem;
+                margin-right: 0.5rem;
+            }
+            .area4 {
+                margin: 0;
+                margin-left: .5rem;
+                margin-right: .5rem;
+            }
+            .area5 {
+                margin: 0;
+                margin-left: .5rem;
+                margin-right: .5rem;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    section {
+        .areaGrid2 {
+            h4 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: .75rem;
+                padding: .5rem;
+                margin-right: .5rem;
+                border-width: 1px;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+
+    /* Layout Main Manejo de Redes */
+
+    .fondoManejo1 {
+        height: 37.5rem;
+        h2 {
+            font-size: 2rem;
+            padding-top: 17.5rem;
+        }
+    }
+    article {
+        .parrafoManejo {
+            flex-direction: column;
+            img {
+                padding: .5rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+    article {
+        .gridManejo1 {
+            gap: .25rem;
+            align-items: center;
+            grid-template-areas: 
+            "area1 area1 area1 area2 area2 area2"
+            "area1 area1 area1 area2 area2 area2"
+            "area1 area1 area1 area3 area3 area3"
+            "area1 area1 area1 area3 area3 area3"
+            ". area4 area4 area4 . ."
+            ". area4 area4 area4 . ."
+            ". . area5 area5 area5 ."
+            ". . area5 area5 area5 ."
+            ;
+            p {
+                text-align: end;
+                font-size: 1.75rem;
+                margin-right: .5rem;
+                .negro {
+                    font-size: 1rem;
+                }
+            }
+            .gridM1 {
+                grid-area: area2;
+                font-size: .75rem;
+                color: white;
+                background-color: #dd3737;
+                padding: .40rem;
+                border-radius: 1rem;
+                margin-top: 1rem;
+                margin-right: .5rem;
+            }
+            .gridM2 {
+                grid-area: area3;
+                font-size: .75rem;
+                color: white;
+                background-color:#f1812c;
+                padding: .40rem;
+                border-radius: 1rem;
+                margin-right: .5rem;
+            }
+            .gridM3 {
+                grid-area: area4;
+                font-size: .75rem;
+                color: white;
+                background-color: #dd3737;
+                padding: .40rem;
+                border-radius: 1rem;
+            }
+            .gridM4 {
+                grid-area: area5;
+                font-size: .75rem;
+                color: white;
+                background-color: #f1812c;
+                padding: .40rem;
+                border-radius: 1rem;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .gridManejo2 {
+        img {
+            width: 40vw;
+            height: 70vw;
+            padding-left: 0%;
+            padding-right: 0%;
+            align-self: center;
+            justify-self: center;
+        }
+        h4 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: .75rem;
+            padding: .5rem;
+            border-width: 1px;
+            border-radius: 1.5rem;
+            margin-right: .5rem;
+        }
+    }
+
+    /* Footer @mediaActual320 */
+
+    footer {
+        div {
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .redesSociales {
+        a {
+            i {
+                font-size: 1rem;
+            }
+        }
+    }
+    .copyRight {
+        font-size: .75rem;
+    }
+}

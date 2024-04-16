@@ -1,0 +1,153 @@
+.fondoManejo1 {
+    background-image: url(../assets/img/manejo-de-redes.jpg) ;
+    background-attachment: fixed;
+    height: 67.5rem;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2 {
+        text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+        color: white;
+        font-family: 'avigea';
+        font-size: 5rem;
+        text-align: center;
+        padding-top: 33.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.parrafoManejo {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: left;
+    padding: 4rem;
+    p {
+        .naranja {
+            color: #f1812c;
+        }
+    }
+    img {
+        width: 50vw;
+        padding: 8rem;
+    }
+}
+
+.gridManejo1 {
+    display: grid;
+    height: auto;
+    background-color: #D9D9D9;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1 fr);
+    gap: 2rem;
+    color: white;
+    align-items: center;
+    grid-template-areas:
+    ". area1 area1 area2 area2 ."
+    ". area1 area1 area2 area2 ."
+    ". area1 area1 area3 area3 ."
+    ". area1 area1 area3 area3 ."
+    ". . area4 area4 . ."
+    ". . area4 area4 . ."
+    ". . area5 area5 . ."
+    ". . area5 area5 . ."
+    ;
+    p {
+        grid-area: area1;
+        color: #134f61;
+        font-family: 'avigea';
+        font-size: 3rem;
+        span {
+            color: #dd3737;
+        }
+        .naranja {
+            color: #f1812c;
+        }
+        .negro {
+            font-size: 2rem;
+            color: black;
+        }
+    }
+    .gridM1 {
+        grid-area: area2;
+        background-color: #dd3737;
+        padding: 1rem;
+        border-radius: 1.75rem;
+        margin-top: 1rem;
+        &:hover {
+            box-shadow: 2px 1px 5px black;
+        }
+    }
+    .gridM2 {
+        grid-area: area3;
+        background-color: #f1812c;
+        padding: 1rem;
+        border-radius: 1.75rem;
+        &:hover {
+            box-shadow: 2px 1px 5px black;
+        }
+    }
+    .gridM3 {
+        grid-area: area4;
+        background-color: #dd3737;
+        padding: 1rem;
+        border-radius: 1.75rem;
+        &:hover {
+            box-shadow: 2px 1px 5px black;
+        }
+    }
+    .gridM4 {
+        grid-area: area5;
+        background-color: #f1812c;
+        padding: 1rem;
+        border-radius: 1.75rem;
+        margin-bottom: 1rem;
+        &:hover {
+            box-shadow: 2px 1px 5px black;
+        }
+    }
+}
+.gridManejo2 {
+    display: grid;
+    height: auto;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "area1 area2"
+    "area1 area3"
+    "area1 ."
+    ;
+    img {
+        grid-area: area1;
+        width: 50vw;
+        height: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    h4 {
+        grid-area: area2;
+        color: white;
+        font-family: 'avigea';
+        font-size: 4rem;
+        align-self: flex-end;
+        span {
+            color: #dd3737;
+        }
+    }
+    p {
+        grid-area: area3;
+        color: white;
+        align-content: center;
+        padding: 4rem;
+        margin-right: 8rem;
+        border-style: solid;
+        border-radius: 4rem;
+        &:hover {
+            box-shadow: 2px 1px 8px black;
+        }
+    }
+}

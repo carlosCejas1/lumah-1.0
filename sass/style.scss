@@ -1,9 +1,16 @@
 @import "./utilities/maps";
 
-@import "./base/fonts";
 @import "./base/reset";
+@import "./base/fonts";
 
 @import "./layout/header";
 @import "./layout/navbar";
 @import "./layout/footer";
 @import "./layout/main-inicio";
+@import "./layout/main-desarrollo-de-marca";
+@import "./layout/main-manejo-de-redes";
+@import "./layout/main-quienes-somos";
+@import "./layout/main-contacto";
+
+@import "./layout/mediaQuery/media768";
+@import "./layout/mediaQuery/media320";

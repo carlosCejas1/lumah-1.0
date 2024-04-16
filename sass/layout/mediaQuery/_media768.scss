@@ -1,0 +1,176 @@
+@media (max-width:768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                padding-bottom: 0rem;
+            }
+        }
+    }
+    .portada {
+        background-image: url(../assets/img/Caro\ Parada.jpg);
+        background-position: 30%;
+        h1 {
+            width: 95%;
+            font-size: 3rem;
+            justify-content: flex-end;
+            text-align: right;
+        }
+    }
+
+    /* Layout Main Desarrollo de Marca */
+
+    .fondoDesarrollo1 {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    .parrafoDesarrollo1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    .parrafoDesarrollo2 {
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 1rem;
+        p {
+            font-size: 1rem;
+        }
+        img {
+            width: 45%;
+            border-radius: 2rem;
+        }
+    }
+    .area1 {
+        align-items: center;
+    }
+    section {
+        .areaGrid2 {
+            img {
+                width: 40vw;
+            }
+            h4 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 1rem;
+                margin-right: 1rem;
+                padding: 1.5rem;
+                border-width: 2px;
+            }
+        }
+    }
+
+    /* Layout Main Manejo de Redes */
+
+    .fondoManejo1 {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+    article {
+        h3 {
+            padding-bottom: 0;
+        }
+        .parrafoManejo {
+            font-size: 1rem;
+            padding: 1rem;
+            img {
+                padding: 4rem;
+            }
+        }
+    }
+    .gridManejo1 {
+        font-size: 1rem;
+        grid-template-areas:
+        "area1 area1 area1 area2 area2 area2"
+        "area1 area1 area1 area2 area2 area2"
+        "area1 area1 area1 area3 area3 area3"
+        "area1 area1 area1 area3 area3 area3"
+        ". area4 area4 area4 . ."
+        ". area4 area4 area4 . ."
+        ". . area5 area5 area5 ."
+        ". . area5 area5 area5 ."
+        ;
+        p {
+            font-size: 3rem;
+            justify-self: center;
+        }
+        .gridM1 {
+            margin-right: 1rem;
+        }
+        .gridM2 {
+            margin-right: 1rem;
+        }
+    }
+    .gridManejo2 {
+        height: auto;
+        gap: 0;
+        grid-template-areas:
+        "area1 area2"
+        "area1 area3"
+        "area1 area3"
+        ;
+        img {
+            height: auto;
+            align-self: center;
+        }
+        h4 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1rem;
+            padding: 1rem;
+            align-self: center;
+            margin-right: 1rem;
+            border-radius: 3rem;
+            border-width: 2px;
+        }
+    }
+
+    /* Layout Main Quienes Somos */
+
+    .quienesSomos {
+        flex-direction: row-reverse;
+        gap: 0;
+        img {
+            &:hover {
+                box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+            }
+        }
+        p {
+            padding: 1rem;
+        }
+    }
+
+    /* Layout Main Contacto */
+
+    h5 {
+        font-size: 2rem;
+        padding-left: 10%;
+        padding-right: 20%;
+    }
+    .portadaForm {
+        p {
+            padding-bottom: 1rem;
+        }
+    }
+
+    /* Footer @mediaActual768 */
+
+    footer {
+        div {
+            h4 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

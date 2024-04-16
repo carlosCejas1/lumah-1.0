@@ -1,3 +1,7 @@
+.abrirMenu {
+    display: none;
+}
+
 .navBar {
     display: flex;
     flex-direction: row;
@@ -13,6 +17,9 @@
             font-size: 1.25rem;
             display: inline-block;
             position: relative;
+            .naranja {
+                color: #f1812c;
+            }
             &:hover {
                 color: #f18112;
             }
@@ -34,10 +41,6 @@
             }
         }
     }
-}
-
-.abrirMenu {
-    display: none;
 }
 
 .cerrarMenu {

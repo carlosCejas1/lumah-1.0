@@ -1,0 +1,72 @@
+h5 {
+    color: #134f61;
+    font-family: 'avigea';
+    font-size: 3rem;
+    text-align: right;
+    padding-top: 1rem;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-bottom: 1rem;
+    background-color: white;
+    span {
+        color: #dd3737;
+    }
+    .naranja {
+        color: #f1812c;
+    }
+}
+
+.portadaForm {
+    display: flex;
+    flex-direction: row;
+    p {
+        width: 50vw;
+        color: white;
+        background-image: url(../assets/img/agenda.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: right;
+        padding-right: 1rem;
+        padding-top: 1.5rem;
+        text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+    }
+    .formulario {
+        background-color: #f1812c;
+        width: 50vw;
+        padding: 1rem;
+        text-transform: capitalize;
+        .tituloForm {
+            color: white;
+            font-size: 1.25rem;
+            text-indent: .25rem;
+            text-align-last: left;
+        }
+        .controles {
+            width: 100%;
+            padding: .5rem;
+            border: 1px solid color(white);
+            border-radius: 0.25rem;
+            border-color: white;
+            margin-bottom: .25rem;
+            font-size: 1rem;
+        }
+        .terminosY {
+            font-size: .75rem;
+            color: white;
+            text-decoration: none;
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+                }
+            }
+        }
+        .botonEnviar {
+            background-color: #dd3737;
+            padding: .20rem;
+            border-radius: 0.5rem;
+        }
+    }
+}

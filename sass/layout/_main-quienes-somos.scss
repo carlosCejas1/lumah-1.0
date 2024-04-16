@@ -1,0 +1,27 @@
+.quienesSomos {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1rem;
+    background-color: #D9D9D9;
+    color: black;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    img {
+        width: 50vw;
+    }
+    p {
+        span {
+            color: #dd3737;
+        }
+        .hola {
+            color: #134f61;
+            font-size: 1.5rem;
+            font-family: 'avigea';
+        }
+        .naranja {
+            color: #f1812c;
+        }
+    }
+}

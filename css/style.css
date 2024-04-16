@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Avigea";
-  font-style: normal;
-  font-weight: 3.125rem;
-  src: local("Avigea"), url("https://fonts.cdnfonts.com/s/74718/Avigea-6YGKo.woff") format("woff");
-}
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +13,12 @@ body {
   background-color: #134f61;
 }
 
+@font-face {
+  font-family: "Avigea";
+  font-style: normal;
+  font-weight: 3.125rem;
+  src: local("Avigea"), url("https://fonts.cdnfonts.com/s/74718/Avigea-6YGKo.woff") format("woff");
+}
 header {
   display: flex;
   flex-direction: row;
@@ -33,11 +33,16 @@ header article img {
   margin: 0.9375rem;
 }
 header article p {
+  font-family: "avigea";
   color: white;
   padding-left: 1rem;
   text-transform: capitalize;
   padding-bottom: 1rem;
   text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+}
+
+.abrirMenu {
+  display: none;
 }
 
 .navBar {
@@ -55,6 +60,9 @@ header article p {
   font-size: 1.25rem;
   display: inline-block;
   position: relative;
+}
+.navBar li a .naranja {
+  color: #f1812c;
 }
 .navBar li a:hover {
   color: #f18112;
@@ -76,10 +84,6 @@ header article p {
   transform-origin: bottom left;
 }
 
-.abrirMenu {
-  display: none;
-}
-
 .cerrarMenu {
   display: none;
 }
@@ -91,7 +95,7 @@ footer div h4 {
   font-family: "avigea";
   color: white;
   background-color: #134f61;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   text-transform: capitalize;
   padding-top: 1rem;
@@ -117,10 +121,11 @@ footer div h4 {
   text-transform: capitalize;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
 }
 
 .portada {
-  background-image: url(../../img/fondo.jpg);
+  background-image: url(../assets/img/fondo.jpg);
   height: 67.5rem;
   background-position: top;
   background-repeat: no-repeat;
@@ -141,6 +146,777 @@ h1 span {
 }
 h1 .naranja {
   color: #f1812c;
+}
+
+.fondoDesarrollo1 {
+  background-image: url(../assets/img/fondo-desarrollo-de-marca.jpg);
+  background-attachment: fixed;
+  height: 67.5rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fondoDesarrollo1 h2 {
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+  color: white;
+  font-family: "avigea";
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 33.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.parrafoDesarrollo1 {
+  padding-top: 1rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 1rem;
+  color: #134f61;
+  font-size: 2rem;
+  background-color: white;
+}
+
+h3 {
+  color: #134f61;
+  font-family: "avigea";
+  font-size: 5rem;
+  padding-left: 22%;
+  padding-right: 22%;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+h3 span {
+  color: #dd3737;
+}
+h3 .naranja {
+  color: #f1812c;
+}
+
+.parrafoDesarrollo2 {
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  gap: 3rem;
+}
+.parrafoDesarrollo2 p {
+  font-size: 1.5rem;
+}
+.parrafoDesarrollo2 p .naranja {
+  color: #f1812c;
+}
+.parrafoDesarrollo2 img {
+  width: 25rem;
+  border-radius: 3rem;
+  align-content: flex-end;
+}
+
+.fondoDesarrollo2 .area1 {
+  display: grid;
+  background-color: #D9D9D9;
+  color: white;
+  font-size: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area3" ". area4 area4 ." ". area5 area5 .";
+}
+.fondoDesarrollo2 .area1 p {
+  grid-area: area1;
+  color: #134f61;
+  font-family: "avigea";
+  font-size: 3rem;
+  text-align: left;
+  justify-self: center;
+  align-self: center;
+}
+.fondoDesarrollo2 .area1 p span {
+  color: #dd3737;
+}
+.fondoDesarrollo2 .area1 p .naranja {
+  color: #f1812c;
+}
+.fondoDesarrollo2 .area1 p .negro {
+  color: black;
+  font-size: 2rem;
+}
+.fondoDesarrollo2 .area1 .area2 {
+  grid-area: area2;
+  color: white;
+  background-color: #f1812c;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.fondoDesarrollo2 .area1 .area2:hover {
+  box-shadow: 2px 1px 5px #c76b24;
+}
+.fondoDesarrollo2 .area1 .area3 {
+  grid-area: area3;
+  background-color: #dd3737;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.fondoDesarrollo2 .area1 .area3:hover {
+  box-shadow: 2px 1px 5px #b32c2c;
+}
+.fondoDesarrollo2 .area1 .area4 {
+  grid-area: area4;
+  background-color: #f1812c;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.fondoDesarrollo2 .area1 .area4:hover {
+  box-shadow: 2px 1px 5px #c76b24;
+}
+.fondoDesarrollo2 .area1 .area5 {
+  grid-area: area5;
+  background-color: #dd3737;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.fondoDesarrollo2 .area1 .area5:hover {
+  box-shadow: 2px 1px 5px #b32c2c;
+}
+
+section .areaGrid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3 1fr);
+  grid-template-areas: "zona1 zona2" "zona1 zona3" "zona1 zona3";
+}
+section .areaGrid2 img {
+  grid-area: zona1;
+  justify-self: center;
+  align-self: center;
+}
+section .areaGrid2 h4 {
+  grid-area: zona2;
+  color: white;
+  font-family: "avigea";
+  font-size: 4rem;
+  align-self: flex-end;
+}
+section .areaGrid2 h4 span {
+  color: #dd3737;
+}
+section .areaGrid2 p {
+  grid-area: zona3;
+  color: white;
+  align-self: center;
+  padding: 4rem;
+  margin-right: 8rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 4rem;
+}
+section .areaGrid2 p:hover {
+  box-shadow: 2px 1px 8px black;
+}
+
+.fondoManejo1 {
+  background-image: url(../assets/img/manejo-de-redes.jpg);
+  background-attachment: fixed;
+  height: 67.5rem;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fondoManejo1 h2 {
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+  color: white;
+  font-family: "avigea";
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 33.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.parrafoManejo {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: left;
+  padding: 4rem;
+}
+.parrafoManejo p .naranja {
+  color: #f1812c;
+}
+.parrafoManejo img {
+  width: 50vw;
+  padding: 8rem;
+}
+
+.gridManejo1 {
+  display: grid;
+  height: auto;
+  background-color: #D9D9D9;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1 fr);
+  gap: 2rem;
+  color: white;
+  align-items: center;
+  grid-template-areas: ". area1 area1 area2 area2 ." ". area1 area1 area2 area2 ." ". area1 area1 area3 area3 ." ". area1 area1 area3 area3 ." ". . area4 area4 . ." ". . area4 area4 . ." ". . area5 area5 . ." ". . area5 area5 . .";
+}
+.gridManejo1 p {
+  grid-area: area1;
+  color: #134f61;
+  font-family: "avigea";
+  font-size: 3rem;
+}
+.gridManejo1 p span {
+  color: #dd3737;
+}
+.gridManejo1 p .naranja {
+  color: #f1812c;
+}
+.gridManejo1 p .negro {
+  font-size: 2rem;
+  color: black;
+}
+.gridManejo1 .gridM1 {
+  grid-area: area2;
+  background-color: #dd3737;
+  padding: 1rem;
+  border-radius: 1.75rem;
+  margin-top: 1rem;
+}
+.gridManejo1 .gridM1:hover {
+  box-shadow: 2px 1px 5px black;
+}
+.gridManejo1 .gridM2 {
+  grid-area: area3;
+  background-color: #f1812c;
+  padding: 1rem;
+  border-radius: 1.75rem;
+}
+.gridManejo1 .gridM2:hover {
+  box-shadow: 2px 1px 5px black;
+}
+.gridManejo1 .gridM3 {
+  grid-area: area4;
+  background-color: #dd3737;
+  padding: 1rem;
+  border-radius: 1.75rem;
+}
+.gridManejo1 .gridM3:hover {
+  box-shadow: 2px 1px 5px black;
+}
+.gridManejo1 .gridM4 {
+  grid-area: area5;
+  background-color: #f1812c;
+  padding: 1rem;
+  border-radius: 1.75rem;
+  margin-bottom: 1rem;
+}
+.gridManejo1 .gridM4:hover {
+  box-shadow: 2px 1px 5px black;
+}
+
+.gridManejo2 {
+  display: grid;
+  height: auto;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "area1 area2" "area1 area3" "area1 .";
+}
+.gridManejo2 img {
+  grid-area: area1;
+  width: 50vw;
+  height: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.gridManejo2 h4 {
+  grid-area: area2;
+  color: white;
+  font-family: "avigea";
+  font-size: 4rem;
+  align-self: flex-end;
+}
+.gridManejo2 h4 span {
+  color: #dd3737;
+}
+.gridManejo2 p {
+  grid-area: area3;
+  color: white;
+  align-content: center;
+  padding: 4rem;
+  margin-right: 8rem;
+  border-style: solid;
+  border-radius: 4rem;
+}
+.gridManejo2 p:hover {
+  box-shadow: 2px 1px 8px black;
+}
+
+.quienesSomos {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 1rem;
+  background-color: #D9D9D9;
+  color: black;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.quienesSomos img {
+  width: 50vw;
+}
+.quienesSomos p span {
+  color: #dd3737;
+}
+.quienesSomos p .hola {
+  color: #134f61;
+  font-size: 1.5rem;
+  font-family: "avigea";
+}
+.quienesSomos p .naranja {
+  color: #f1812c;
+}
+
+h5 {
+  color: #134f61;
+  font-family: "avigea";
+  font-size: 3rem;
+  text-align: right;
+  padding-top: 1rem;
+  padding-left: 25vw;
+  padding-right: 25vw;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+h5 span {
+  color: #dd3737;
+}
+h5 .naranja {
+  color: #f1812c;
+}
+
+.portadaForm {
+  display: flex;
+  flex-direction: row;
+}
+.portadaForm p {
+  width: 50vw;
+  color: white;
+  background-image: url(../assets/img/agenda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+}
+.portadaForm .formulario {
+  background-color: #f1812c;
+  width: 50vw;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.portadaForm .formulario .tituloForm {
+  color: white;
+  font-size: 1.25rem;
+  text-indent: 0.25rem;
+  text-align-last: left;
+}
+.portadaForm .formulario .controles {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid color(white);
+  border-radius: 0.25rem;
+  border-color: white;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+.portadaForm .formulario .terminosY {
+  font-size: 0.75rem;
+  color: white;
+  text-decoration: none;
+}
+.portadaForm .formulario .terminosY a {
+  color: white;
+  text-decoration: none;
+}
+.portadaForm .formulario .terminosY a:hover {
+  text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+}
+.portadaForm .formulario .botonEnviar {
+  background-color: #dd3737;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header article p {
+    padding-bottom: 0rem;
+  }
+  .portada {
+    background-image: url(../assets/img/Caro\ Parada.jpg);
+    background-position: 30%;
+  }
+  .portada h1 {
+    width: 95%;
+    font-size: 3rem;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  /* Layout Main Desarrollo de Marca */
+  .fondoDesarrollo1 h2 {
+    font-size: 4rem;
+  }
+  .parrafoDesarrollo1 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .parrafoDesarrollo2 {
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 1rem;
+  }
+  .parrafoDesarrollo2 p {
+    font-size: 1rem;
+  }
+  .parrafoDesarrollo2 img {
+    width: 45%;
+    border-radius: 2rem;
+  }
+  .area1 {
+    align-items: center;
+  }
+  section .areaGrid2 img {
+    width: 40vw;
+  }
+  section .areaGrid2 h4 {
+    font-size: 3rem;
+  }
+  section .areaGrid2 p {
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    border-width: 2px;
+  }
+  /* Layout Main Manejo de Redes */
+  .fondoManejo1 h2 {
+    font-size: 4rem;
+  }
+  article h3 {
+    padding-bottom: 0;
+  }
+  article .parrafoManejo {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  article .parrafoManejo img {
+    padding: 4rem;
+  }
+  .gridManejo1 {
+    font-size: 1rem;
+    grid-template-areas: "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area3 area3 area3" "area1 area1 area1 area3 area3 area3" ". area4 area4 area4 . ." ". area4 area4 area4 . ." ". . area5 area5 area5 ." ". . area5 area5 area5 .";
+  }
+  .gridManejo1 p {
+    font-size: 3rem;
+    justify-self: center;
+  }
+  .gridManejo1 .gridM1 {
+    margin-right: 1rem;
+  }
+  .gridManejo1 .gridM2 {
+    margin-right: 1rem;
+  }
+  .gridManejo2 {
+    height: auto;
+    gap: 0;
+    grid-template-areas: "area1 area2" "area1 area3" "area1 area3";
+  }
+  .gridManejo2 img {
+    height: auto;
+    align-self: center;
+  }
+  .gridManejo2 h4 {
+    font-size: 3rem;
+  }
+  .gridManejo2 p {
+    font-size: 1rem;
+    padding: 1rem;
+    align-self: center;
+    margin-right: 1rem;
+    border-radius: 3rem;
+    border-width: 2px;
+  }
+  /* Layout Main Quienes Somos */
+  .quienesSomos {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+  .quienesSomos img:hover {
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+  }
+  .quienesSomos p {
+    padding: 1rem;
+  }
+  /* Layout Main Contacto */
+  h5 {
+    font-size: 2rem;
+    padding-left: 10%;
+    padding-right: 20%;
+  }
+  .portadaForm p {
+    padding-bottom: 1rem;
+  }
+  /* Footer @mediaActual768 */
+  footer div h4 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    flex-direction: row;
+    padding-right: 1rem;
+  }
+  header article {
+    align-items: flex-start;
+  }
+  header .abrirMenu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+  }
+  header nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #134f61;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.466);
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  header nav .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  header nav .navBar {
+    flex-direction: column;
+    align-items: end;
+    padding: 1rem;
+  }
+  header nav .cerrarMenu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+  }
+  .portada {
+    background-image: url(../assets/img/caro-320p.jpg);
+    background-position: top;
+    background-size: contain;
+    width: 100vw;
+    height: 150vw;
+  }
+  .portada h1 {
+    width: 50%;
+    font-size: 1.75rem;
+    margin-right: 0;
+    text-align: left;
+  }
+  /* Layout Main Desarrollo de Marca */
+  .fondoDesarrollo1 {
+    height: 37.5rem;
+  }
+  .fondoDesarrollo1 h2 {
+    font-size: 2rem;
+    padding-top: 17.5rem;
+  }
+  .parrafoDesarrollo1 {
+    font-size: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  h3 {
+    font-size: 1.75rem;
+    padding-left: 10%;
+    padding-right: 0%;
+    padding-bottom: 0rem;
+  }
+  .parrafoDesarrollo2 {
+    flex-direction: column;
+  }
+  .parrafoDesarrollo2 p {
+    font-size: 1rem;
+  }
+  .parrafoDesarrollo2 img {
+    width: 80%;
+  }
+  .fondoDesarrollo2 .area1 {
+    font-size: 0.75rem;
+    height: auto;
+    grid-template-areas: "area1 area1 area2 area2" "area3 area3 area3 ." ". area4 area4 area4" "area5 area5 area5 .";
+  }
+  .fondoDesarrollo2 .area1 p {
+    font-size: 1.75rem;
+  }
+  .fondoDesarrollo2 .area1 p .negro {
+    font-size: 1rem;
+  }
+  .fondoDesarrollo2 .area1 .area2 {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+  .fondoDesarrollo2 .area1 .area3 {
+    margin: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .fondoDesarrollo2 .area1 .area4 {
+    margin: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .fondoDesarrollo2 .area1 .area5 {
+    margin: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  section .areaGrid2 h4 {
+    font-size: 2rem;
+  }
+  section .areaGrid2 p {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-width: 1px;
+    border-radius: 1.5rem;
+  }
+  /* Layout Main Manejo de Redes */
+  .fondoManejo1 {
+    height: 37.5rem;
+  }
+  .fondoManejo1 h2 {
+    font-size: 2rem;
+    padding-top: 17.5rem;
+  }
+  article .parrafoManejo {
+    flex-direction: column;
+  }
+  article .parrafoManejo img {
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  article .gridManejo1 {
+    gap: 0.25rem;
+    align-items: center;
+    grid-template-areas: "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area3 area3 area3" "area1 area1 area1 area3 area3 area3" ". area4 area4 area4 . ." ". area4 area4 area4 . ." ". . area5 area5 area5 ." ". . area5 area5 area5 .";
+  }
+  article .gridManejo1 p {
+    text-align: end;
+    font-size: 1.75rem;
+    margin-right: 0.5rem;
+  }
+  article .gridManejo1 p .negro {
+    font-size: 1rem;
+  }
+  article .gridManejo1 .gridM1 {
+    grid-area: area2;
+    font-size: 0.75rem;
+    color: white;
+    background-color: #dd3737;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  article .gridManejo1 .gridM2 {
+    grid-area: area3;
+    font-size: 0.75rem;
+    color: white;
+    background-color: #f1812c;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+  }
+  article .gridManejo1 .gridM3 {
+    grid-area: area4;
+    font-size: 0.75rem;
+    color: white;
+    background-color: #dd3737;
+    padding: 0.4rem;
+    border-radius: 1rem;
+  }
+  article .gridManejo1 .gridM4 {
+    grid-area: area5;
+    font-size: 0.75rem;
+    color: white;
+    background-color: #f1812c;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .gridManejo2 img {
+    width: 40vw;
+    height: 70vw;
+    padding-left: 0%;
+    padding-right: 0%;
+    align-self: center;
+    justify-self: center;
+  }
+  .gridManejo2 h4 {
+    font-size: 2rem;
+  }
+  .gridManejo2 p {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    border-width: 1px;
+    border-radius: 1.5rem;
+    margin-right: 0.5rem;
+  }
+  /* Footer @mediaActual320 */
+  footer div h4 {
+    font-size: 1.5rem;
+  }
+  .redesSociales a i {
+    font-size: 1rem;
+  }
+  .copyRight {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

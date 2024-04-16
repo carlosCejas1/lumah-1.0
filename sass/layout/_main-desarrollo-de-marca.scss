@@ -1,0 +1,188 @@
+.fondoDesarrollo1 {
+    background-image: url(../assets/img/fondo-desarrollo-de-marca.jpg);
+    background-attachment: fixed;
+    height: 67.5rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+        text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+        color: white;
+        font-family: 'avigea';
+        font-size: 5rem;
+        text-align: center;
+        padding-top: 33.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.parrafoDesarrollo1 {
+    padding-top: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 1rem;
+    color: #134f61;
+    font-size: 2rem;
+    background-color: white;
+}
+
+h3 {
+    color: #134f61;
+    font-family: 'avigea';
+    font-size: 5rem;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 1rem;
+    background-color: white;
+    span {
+        color: #dd3737;
+    }
+    .naranja {
+        color: #f1812c;
+    }
+}
+.parrafoDesarrollo2 {
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    gap: 3rem;
+    p {
+        font-size: 1.5rem;
+        .naranja {
+            color: #f1812c;
+        }
+    }
+    img {
+        width: 25rem;
+        border-radius: 3rem;
+        align-content: flex-end;
+    }
+}
+
+.fondoDesarrollo2 {
+    .area1 {
+        display: grid;
+        background-color: #D9D9D9;
+        color: white;
+        font-size: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "area1 area1 area2 area2"
+        "area1 area1 area3 area3"
+        ". area4 area4 ."
+        ". area5 area5 ."
+        ;
+        p {
+            grid-area: area1;
+            color: #134f61;
+            font-family: 'avigea';
+            font-size: 3rem;
+            text-align: left;
+            justify-self: center;
+            align-self: center;
+            span {
+                color: #dd3737;
+            }
+            .naranja {
+                color: #f1812c;
+            }
+            .negro {
+                color: black;
+                font-size: 2rem;
+            }
+        }
+        .area2 {
+            grid-area: area2;
+            color: white;
+            background-color: #f1812c;
+            margin: 1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            &:hover {
+                box-shadow: 2px 1px 5px #c76b24;
+            }
+        }
+        .area3 {
+            grid-area: area3;
+            background-color: #dd3737;
+            margin: 1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            &:hover {
+                box-shadow: 2px 1px 5px #b32c2c;
+            }
+        }
+        .area4 {
+            grid-area: area4;
+            background-color: #f1812c;
+            margin: 1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            &:hover {
+                box-shadow: 2px 1px 5px #c76b24;
+            }
+        }
+        .area5 {
+            grid-area: area5;
+            background-color: #dd3737;
+            margin: 1rem;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            &:hover {
+                box-shadow: 2px 1px 5px #b32c2c;
+            }
+        }
+    }
+}
+section {
+    .areaGrid2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3 1fr);
+        grid-template-areas: 
+        "zona1 zona2"
+        "zona1 zona3"
+        "zona1 zona3";
+        img {
+            grid-area: zona1;
+            justify-self: center;
+            align-self: center;
+        }
+        h4 {
+            grid-area: zona2;
+            color: white;
+            font-family: 'avigea';
+            font-size: 4rem;
+            align-self: flex-end;
+            span {
+                color: #dd3737;
+            }
+        }
+        p {
+            grid-area: zona3;
+            color: white;
+            align-self: center;
+            padding: 4rem;
+            margin-right: 8rem;
+            border-style: solid;
+            border-color: white;
+            border-radius: 4rem;
+            &:hover {
+                box-shadow: 2px 1px 8px black;
+            }
+        }
+    }
+}
