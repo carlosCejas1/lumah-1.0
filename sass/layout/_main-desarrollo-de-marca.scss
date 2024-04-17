@@ -186,3 +186,28 @@ section {
         }
     }
 }
+html {
+    scroll-behavior: smooth;
+}
+.botonTop {
+    @import url(../utilities/_animations.scss);
+    position: fixed;
+    width: 3.125rem;
+    height: 3.125rem;
+    color: white;
+    background-color: #f1812c83;
+    bottom: 2.5rem;
+    right: 3.125rem;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.125rem;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    animation: movimientoBoton 2s infinite;
+    transition: box-shadow 0.2s ease;
+    &:hover {
+        background-color: #f1812c;
+        box-shadow: 2px 1px 8px black;
+        
+    }
+}

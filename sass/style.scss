@@ -1,7 +1,14 @@
+/* 1° Utilities */
+
 @import "./utilities/maps";
+@import "./utilities/animations";
+
+/* 2° Archivos de Base */
 
 @import "./base/reset";
 @import "./base/fonts";
+
+/* 3° Layout */
 
 @import "./layout/header";
 @import "./layout/navbar";
@@ -12,5 +19,7 @@
 @import "./layout/main-quienes-somos";
 @import "./layout/main-contacto";
 
+/* Layout @mediaQuery */
+
 @import "./layout/mediaQuery/media768";
-@import "./layout/mediaQuery/media320";
+@import "./layout/mediaQuery/media425";
