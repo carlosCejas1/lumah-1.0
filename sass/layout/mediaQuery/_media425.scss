@@ -163,10 +163,10 @@
             "area1 area1 area1 area2 area2 area2"
             "area1 area1 area1 area3 area3 area3"
             "area1 area1 area1 area3 area3 area3"
-            ". area4 area4 area4 . ."
-            ". area4 area4 area4 . ."
-            ". . area5 area5 area5 ."
-            ". . area5 area5 area5 ."
+            "area4 area4 area4 area4 area4 ."
+            "area4 area4 area4 area4 area4 ."
+            ". area5 area5 area5 area5 area5"
+            ". area5 area5 area5 area5 area5"
             ;
             p {
                 text-align: end;
@@ -201,6 +201,7 @@
                 color: white;
                 background-color: #dd3737;
                 padding: .40rem;
+                margin-left: .5rem;
                 border-radius: 1rem;
             }
             .gridM4 {
@@ -210,6 +211,7 @@
                 background-color: #f1812c;
                 padding: .40rem;
                 border-radius: 1rem;
+                margin-right: .5rem;
                 margin-bottom: .5rem;
             }
         }
@@ -300,5 +302,10 @@
     }
     .copyRight {
         font-size: .75rem;
+        a {
+            i {
+                font-size: 1rem;
+            }
+        }
     }
 }

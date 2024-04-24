@@ -49,8 +49,22 @@
             border-radius: 2rem;
         }
     }
-    .area1 {
-        align-items: center;
+    .fondoDesarrollo2 {
+        .area1 {
+            align-items: center;
+            grid-template-areas: 
+            "area1 area1 area2 area2"
+            "area1 area1 area3 area3"
+            "area4 area4 area4 ."
+            ". area5 area5 area5"
+            ;
+            .area2 {
+                margin-left: 0rem;
+            }
+            .area3 {
+                margin-left: 0rem;
+            }
+        }
     }
     section {
         .areaGrid2 {

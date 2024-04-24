@@ -137,6 +137,10 @@ footer div h4 {
   padding-bottom: 1rem;
   text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
 }
+.copyRight a i {
+  color: white;
+  font-size: 1.25rem;
+}
 
 .portada {
   background-image: url(../assets/img/fondo.jpg);
@@ -654,8 +658,15 @@ h5 .naranja {
     width: 45%;
     border-radius: 2rem;
   }
-  .area1 {
+  .fondoDesarrollo2 .area1 {
     align-items: center;
+    grid-template-areas: "area1 area1 area2 area2" "area1 area1 area3 area3" "area4 area4 area4 ." ". area5 area5 area5";
+  }
+  .fondoDesarrollo2 .area1 .area2 {
+    margin-left: 0rem;
+  }
+  .fondoDesarrollo2 .area1 .area3 {
+    margin-left: 0rem;
   }
   section .areaGrid2 img {
     width: 40vw;
@@ -884,7 +895,7 @@ h5 .naranja {
   article .gridManejo1 {
     gap: 0.25rem;
     align-items: center;
-    grid-template-areas: "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area3 area3 area3" "area1 area1 area1 area3 area3 area3" ". area4 area4 area4 . ." ". area4 area4 area4 . ." ". . area5 area5 area5 ." ". . area5 area5 area5 .";
+    grid-template-areas: "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area2 area2 area2" "area1 area1 area1 area3 area3 area3" "area1 area1 area1 area3 area3 area3" "area4 area4 area4 area4 area4 ." "area4 area4 area4 area4 area4 ." ". area5 area5 area5 area5 area5" ". area5 area5 area5 area5 area5";
   }
   article .gridManejo1 p {
     text-align: end;
@@ -919,6 +930,7 @@ h5 .naranja {
     color: white;
     background-color: #dd3737;
     padding: 0.4rem;
+    margin-left: 0.5rem;
     border-radius: 1rem;
   }
   article .gridManejo1 .gridM4 {
@@ -928,6 +940,7 @@ h5 .naranja {
     background-color: #f1812c;
     padding: 0.4rem;
     border-radius: 1rem;
+    margin-right: 0.5rem;
     margin-bottom: 0.5rem;
   }
   .gridManejo2 img {
@@ -998,6 +1011,9 @@ h5 .naranja {
   }
   .copyRight {
     font-size: 0.75rem;
+  }
+  .copyRight a i {
+    font-size: 1rem;
   }
 }
 
