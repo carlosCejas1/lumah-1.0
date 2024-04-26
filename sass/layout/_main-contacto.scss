@@ -30,6 +30,16 @@ h5 {
         padding-right: 1rem;
         padding-top: 1.5rem;
         text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: #06191f;
+            }
+            i {
+                color: white;
+            }
+        }
     }
     .formulario {
         background-color: #f1812c;

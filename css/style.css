@@ -571,6 +571,16 @@ h5 .naranja {
   padding-top: 1.5rem;
   text-shadow: 4px 5px 4px rgba(0, 0, 0, 0.377);
 }
+.portadaForm p a {
+  color: white;
+  text-decoration: none;
+}
+.portadaForm p a:hover {
+  color: #06191f;
+}
+.portadaForm p a i {
+  color: white;
+}
 .portadaForm .formulario {
   background-color: #f1812c;
   width: 50vw;
